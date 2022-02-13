@@ -97,11 +97,12 @@ function App() {
       {/* results will handle the whole game board */}
       <footer className="footer">
         {" "}
-        "Lets test you math skills. This game has 10 sqaure boxes with sequence
-        of number put into the math random to generate random number and you
-        have to beat the score which is set by default 110.You have 3 round to
-        beat highest score. Number sequence from top left to bottom right are as
-        follow: 10, 3, 2, 4, 6, 5, 8, 7, 9.
+        "Lets test your math skills. This game has 9 sqaure boxes with sequence
+        of number put into the math random to generate random board total and
+        you have to beat the score which is set by default 110.You have 3 round
+        to beat the score. Number sequence from top left to bottom right are as
+        follow: 10, 3, 2, 4, 6, 5, 8, 7, 9. Make sure you pick the right
+        boxes!!!! Only the right box can beat the score.
       </footer>
     </div>
   );
