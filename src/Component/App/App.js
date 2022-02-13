@@ -16,17 +16,19 @@ function App() {
       count * Math.ceil(Math.random() * 7) +
       count * Math.ceil(Math.random() * 9),
   ];
- 
 
   useEffect(() => {
-
     function handleClick() {
       setCount(count + 1);
     }
 
     function round() {
       if (count === 3) {
-        return (<div className="page"><h1>Game Over</h1></div>);
+        return (
+          <div className="page">
+            <h1>Game Over</h1>
+          </div>
+        );
       } else {
         return (
           <div className="container">
@@ -71,8 +73,13 @@ function App() {
           <h2>You are the winner</h2>
         </div>
       );
-    }else if(total < 110 && count === 3){
-      return(<div className="page" > <h2>Better luck next time!!!</h2></div>)
+    } else if (total < 110 && count === 3) {
+      return (
+        <div className="page">
+          {" "}
+          <h2>Better luck next time!!!</h2>
+        </div>
+      );
     }
   }
 
@@ -80,9 +87,8 @@ function App() {
     <div>
       <div>
         <div>
-          <h4 className="page-total">
-            Total: {total} </h4>
-            <h4 className="page-total">{win_lose()}</h4>
+          <h4 className="page-total">Total: {total} </h4>
+          <h4 className="page-total">{win_lose()}</h4>
           <h4 className="page-high">110 score to BEAT!!!;</h4>
           <h4 className="page">Round: {count}</h4>
         </div>
@@ -95,7 +101,7 @@ function App() {
         of number put into the math random to generate random number and you
         have to beat the score which is set by default 110.You have 3 round to
         beat highest score. Number sequence from top left to bottom right are as
-        follow: 10, 3, 2, 4, 6, 5, 8, 7, 9"
+        follow: 10, 3, 2, 4, 6, 5, 8, 7, 9.
       </footer>
     </div>
   );

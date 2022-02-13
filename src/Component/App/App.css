@@ -74,5 +74,6 @@
 }
 
 .footer:hover {
-  background-color: purple;
+  background-color: rgba(180,150,50,0.80);
+  color:#e6e6e6
 }
