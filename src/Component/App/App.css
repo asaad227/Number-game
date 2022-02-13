@@ -1,0 +1,78 @@
+.page {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-style: oblique;
+  font-weight: bold;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 400px;
+  height: 400px;
+  background-color:burlywood;
+  border-radius: 10px;
+  margin-left: 38%;
+}
+
+.btn {
+  display: flex;
+  padding: 40px;
+  font-size: large;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(20, 100, 50, 0.5);
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.btn:hover {
+  background-color: crimson;
+  color: blanchedalmond;
+}
+
+.page-total,
+.page-high,
+.page-round {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.page-total {
+  padding-top: 10px;
+}
+
+.page-high:hover {
+  color: rgba(185,150,25,0.50);
+}
+
+.page-round:hover {
+  color: rgba(185,150,25,0.50);
+}
+
+.page-total:hover {
+  color:rgba(185,150,25,0.50);
+}
+
+.page:hover {
+  color: rgba(185,150,25,0.50);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-style: oblique;
+  font-style: italic;
+  padding: 10px 5px 10px 5px;
+ 
+}
+
+.footer:hover {
+  background-color: purple;
+}
